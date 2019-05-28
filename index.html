@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Project</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Your CSS Linked Below-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
+</head>
+
+<body>
+    <!--Top Nave Bar -->
+    <div class="topnav" id="header">
+        <a href="index.html" >Home</a>
+        <a href="favorite.html">Favorites</a>
+        <a href=""></a>
+        <div class="searchBar">
+            <input id="search-term" placeholder="Search">
+            <button id="search-button">Search</button>
+        </div>
+    </div>
+    <!--Slide Show-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img id="posterOne" class="mainImage" src="">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img id="posterTwo" class="mainImage" src="">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img id="posterThree" class="mainImage" src="">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div class="dots" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--Movie List-->
+    <div class="movieList">
+        <h1> Please type any movie </h1>
+    </div>
+    
+
+    <footer class="footer">
+        <p>Copyrights© By Giovanny De los Angeles & Shannon Russell</p>
+    </footer>
+
+    <!-- jQuery Linked Below-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your Javascript Linked Below-->
+    <script src="js/javascript.js" defer></script>
+</body>
+
+</html>
