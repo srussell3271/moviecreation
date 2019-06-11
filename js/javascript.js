@@ -48,7 +48,7 @@ $("#search-button").click(function(){
                                <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>\
                             </div>\
                             <h4>Give Your Review On ' +response.Search[i].Title+ '</h4>\
-                            <textarea class="reviewBox">Type your review here</textarea>\
+                            <textarea class="reviewBox"></textarea>\
                         </div>\
                     </div>'
                 );

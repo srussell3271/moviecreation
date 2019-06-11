@@ -1,35 +1,41 @@
-html{
-   background-image: linear-gradient(to bottom left, black,#b4cbfc,#9bbafb,pink,#9bbafb,#e5edfe, black);
+body{
+    background:#09094c;
 }
 h3{
-    text-align:center;
+    margin-left: 1%;
+    background: gold;
+    border: none;
+    border-radius: 8px;
     color: white;
-    padding-top: 35px
-    margin: 0%;
-    font-family: cursive;
+    width: 200px;
+    padding: .5%;
+    text-align:center;
 }
 .navBar {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
-    padding: .5%;
-    position: sticky;
-    top: 0;
-    background: black;
-    opacity: .9;
-    z-index: 1;
+    padding: 0%;
+    margin-bottom: 1%;
+}
+#inputDiv{
+    display: grid;
 }
 #search-button{
-    background: transparent;
-    color: white;
     border: none;
-    font-family: cursive;
-    font-size: 110%;
+    padding: 0%;
+    border-radius: 8px;
+    height: 70%;
+    background: gold;
+    color: white;
 }
 #search-term{
+    margin: 0%;
     text-align: center;
+    margin-top: 2%;
+    height: 70%;
     border: none;
-    margin: 1% 0%;
+    border-radius: 8px;
 }
 .dropbtn {
     background-color:#2980B9;
@@ -65,23 +71,31 @@ h3{
 }
 
 .dropdown-contents {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  right: 0;
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
 }
 
 .dropdown-content p {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
 }
 .dropdown p:hover {background-color: #ddd;}
+.dropdown-contents p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
 .show {
     display: block;
 }
@@ -112,14 +126,13 @@ h3{
     padding: 2% 0%;
 }
 #Favorites{
-    width:50px;    
-    height:50px;
-    padding: 0%;
-    background: transparent;
     border: none;
+    border-radius: 8px;
+    background: gold;
+    height: 100%;
     color: white;
-    font-family: cursive;
-    font-size: 20px;
+    margin: 2% 0%;
+    font-size: 120%;
 }
 .favoriteGallery{
     display:flex;
@@ -189,7 +202,6 @@ h3{
     animation-duration: 1.5s;
 }
 .mainImage{
-    margin-top:2%;
     height:30%;
     width:100%;
     font-size:36px;
@@ -218,11 +230,4 @@ h3{
 .rating > span:hover ~ span:before {
    content: "\2605";
    position: absolute;
-}
-
-#BG{
-    background-image: linear-gradient(to bottom left, #FFD700,#DAA520,#9bbafb,#FFD700,#9bbafb,#DAA520, #9bbafb);
-}
-#PB{
-    background-image: linear-gradient(to bottom left, #FFB6C1,#FFC0CB,#FF69B4,#9bbafb,#008080, #9bbafb,#FF69B4);
 }
