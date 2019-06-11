@@ -1,5 +1,5 @@
-body{
-    background-image: linear-gradient(to bottom left, black,#b4cbfc,#9bbafb,pink,#9bbafb,#e5edfe, black);
+html{
+   background-image: linear-gradient(to bottom left, black,#b4cbfc,#9bbafb,pink,#9bbafb,#e5edfe, black);
 }
 h3{
     text-align:center;

@@ -7,37 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your CSS Linked Below-->
-    <link rel="stylesheet" href="css/style.css">
+    <link id="pagestyle" rel="stylesheet" href="css/style.css">
+    <link rel = "stylesheet" type = "text/css" href = "Blue-Gold.css" />
     <link href="https://fonts.googleapis.com/css?family=Akronim" rel="stylesheet">
 </head>
 
 <body>
-    <!--Top Nave Bar -->
-    <div class="topnav" id="header">
-        <a href="index.html" >Home</a>
-        <a href="favorite.html">Favorites</a>
-        <a href=""></a>
-        <div class="searchBar">
-            <input id="search-term" placeholder="Search">
-            <button id="search-button">Search</button>
+    <div class="navBar">
+            <h3 onclick="reset()">Movie Center</h3>
+            <button id="Favorites">Favorites</button>
+            <div>
+                <input id="search-term" placeholder="Search Movie Here">
+                <button id="search-button">Search</button>
+            </div>
+            <!--First Drop Down Menu-->
+            <div class="dropdown">
+                <button onclick="dropDownMenu('myDropdown')" class="dropbtn">
+                    <img id="userIcon" src="http://simpleicon.com/wp-content/uploads/user1.png">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <p onclick="favoritedrpdwn()">Favorites</p>
+                    <!--Second Drop Down Menu-->
+                    <p onclick="dropDownMenu('SecondDropDown')">Theme</p>
+                    <div id="SecondDropDown" class="dropdown-contents">
+                        <p id="BG" onclick="swapstylesheet('css/Blue-Yellow.css')">Blue & Gold</p>
+                        <p id="PB" onclick="swapstylesheet('css/style.css')">Pink & Blue</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!--Slide Show-->
+        <!--Slide Show-->
     <div class="slideshow-container">
 
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img id="posterOne" class="mainImage" src="">
+            <img id="posterOne" class="mainImage" src="https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img id="posterTwo" class="mainImage" src="">
+            <img id="posterTwo" class="mainImage" src="https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg">
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img id="posterThree" class="mainImage" src="">
+            <img id="posterThree" class="mainImage" src="https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -51,15 +65,22 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
-    <!--Movie List-->
-    <div class="movieList">
-        <h1> Please type any movie </h1>
-    </div>
     
+        
+        <!-- Page Content -->
+        <div class="gallery">
+            <!--<div class="gallery">-->
+                <h3>  Search for a Movie above <br> Your results will display here</h3>
+            <!--</div>-->
+        </div>
+    <div class="favoriteGallery">
+        
+    </div>
 
-    <footer class="footer">
-        <p>Copyrights© By Giovanny De los Angeles & Shannon Russell</p>
-    </footer>
+        <!-- Footer -->
+        <div class="footer">
+            <p>Copyright &copy; Shannon Russell & Giovanny De Los Angeles 2017</p>
+        </div>
 
     <!-- jQuery Linked Below-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
